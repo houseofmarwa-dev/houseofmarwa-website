@@ -1,89 +1,156 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>House of Marwa — Luxury Couture</title>
-<link rel="stylesheet" href="style.css">
-<script defer src="script.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HOUSE OF MARWA — Home</title>
+  <meta name="description" content="House of Marwa — Luxury couture, beauty, accessories & digital products." />
+  <link rel="stylesheet" href="style.css?v=2.0">
 </head>
-
-<body>
-
-<!-- ================= MEGA MENU ================= -->
-<header class="navbar">
-    <div class="logo">
-        <img src="assets/logo.png" class="logo-img">
-        <span>HOUSE OF MARWA</span>
-    </div>
-
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-
-        <li class="menu-parent">Divisions ▾
-            <div class="mega-menu">
-
-                <div class="column">
-                    <h3>Couture</h3>
-                    <a href="couture.html">All Couture</a>
-                    <a href="couture.html#dresses">Premium Dresses</a>
-                    <a href="couture.html#abayas">Abayas</a>
-                    <a href="couture.html#festive">Festive Wear</a>
+<body class="page-home">
+  <header class="site-header">
+    <div class="topbar">
+      <div class="brand">
+        <a href="index.html" class="brand-link" aria-label="House of Marwa Home">
+          <img src="assets/logo.svg" alt="House of Marwa logo" class="logo">
+        </a>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li class="nav-mega-parent">
+            <button class="mega-toggle" aria-expanded="false">Divisions ▾</button>
+            <div class="mega-menu" aria-hidden="true">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4>Couture</h4>
+                  <ul>
+                    <li><a href="couture.html">Couture Home</a></li>
+                    <li><a href="couture.html#new-arrivals">New Arrivals</a></li>
+                    <li><a href="couture.html#bridal">Bridal</a></li>
+                    <li><a href="couture.html#made-to-measure">Made-to-measure</a></li>
+                  </ul>
                 </div>
-
-                <div class="column">
-                    <h3>Beauty</h3>
-                    <a href="beauty.html">All Beauty Products</a>
-                    <a href="beauty.html#lipstick">Lipsticks</a>
-                    <a href="beauty.html#skin">Skincare</a>
-                    <a href="beauty.html#fragrance">Fragrances</a>
+                <div class="mega-col">
+                  <h4>Beauty</h4>
+                  <ul>
+                    <li><a href="beauty.html">Beauty Home</a></li>
+                    <li><a href="beauty.html#lipstick">Lipsticks</a></li>
+                    <li><a href="beauty.html#skincare">Skincare</a></li>
+                    <li><a href="beauty.html#fragrance">Fragrance</a></li>
+                  </ul>
                 </div>
-
-                <div class="column">
-                    <h3>Accessories</h3>
-                    <a href="accessories.html">All Accessories</a>
-                    <a href="accessories.html#bags">Handbags</a>
-                    <a href="accessories.html#jewels">Jewelry</a>
-                    <a href="accessories.html#sun">Sunglasses</a>
+                <div class="mega-col">
+                  <h4>Accessories</h4>
+                  <ul>
+                    <li><a href="accessories.html">Accessories Home</a></li>
+                    <li><a href="accessories.html#handbags">Handbags</a></li>
+                    <li><a href="accessories.html#jewelry">Jewelry</a></li>
+                    <li><a href="accessories.html#sunglasses">Sunglasses</a></li>
+                  </ul>
                 </div>
-
-                <div class="column">
-                    <h3>Digital</h3>
-                    <a href="digital.html">Digital Store</a>
-                    <a href="digital.html#ebooks">E-Books</a>
-                    <a href="digital.html#courses">Courses</a>
-                    <a href="digital.html#designs">Design Kits</a>
+                <div class="mega-col">
+                  <h4>Digital</h4>
+                  <ul>
+                    <li><a href="digital.html">Digital Home</a></li>
+                    <li><a href="digital.html#ebooks">E-books</a></li>
+                    <li><a href="digital.html#courses">Courses</a></li>
+                    <li><a href="digital.html#templates">Templates</a></li>
+                  </ul>
                 </div>
-
+              </div>
             </div>
-        </li>
-
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cart.html">Cart 🛒</a></li>
-        <li><a href="admin-login.html">Admin</a></li>
-    </ul>
-</header>
-
-
-<!-- ================= HERO ================= -->
-<section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <h1 class="hero-title">House of Marwa</h1>
-        <p class="hero-subtitle">Luxury • Couture • Beauty • Lifestyle</p>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="admin-login.html">Admin Login</a></li>
+        </ul>
+      </nav>
     </div>
-</section>
 
-<!-- ================= FEATURED PRODUCTS ================= -->
-<section class="content-section">
-    <h2 class="section-title">Featured Luxury Pieces</h2>
-    <p class="section-text">A curated selection from our couture, beauty, and lifestyle collections.</p>
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>HOUSE OF MARWA</h1>
+          <p class="lead">Ultra-luxury couture, beauty & lifestyle — crafted with precision, designed for elegance.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="couture.html">Explore Couture</a>
+            <a class="btn btn-outline" href="digital.html">Discover Digital</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="assets/banner.svg" alt="House of Marwa banner" class="hero-banner">
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <div id="featured" class="product-grid"></div>
-</section>
+  <main>
+    <section class="featured-section">
+      <div class="container">
+        <h2>Featured</h2>
+        <div id="featured-products" class="products-grid"></div>
+      </div>
+    </section>
 
-<script>
-loadCategory("garments", "featured");
-</script>
+    <section class="divisions-overview container">
+      <h2>Our Divisions</h2>
+      <div class="cards-grid">
+        <a class="card" href="couture.html">
+          <div class="card-media" style="background-image: url('assets/products/placeholder-couture.svg')"></div>
+          <div class="card-body">
+            <h3>Couture & Garments</h3>
+            <p>High-end couture, impeccable tailoring, premium fabrics.</p>
+          </div>
+        </a>
+        <a class="card" href="beauty.html">
+          <div class="card-media" style="background-image: url('assets/products/placeholder-beauty.svg')"></div>
+          <div class="card-body">
+            <h3>Beauty & Cosmetics</h3>
+            <p>Luxury lipsticks, skincare and refined fragrances.</p>
+          </div>
+        </a>
+        <a class="card" href="accessories.html">
+          <div class="card-media" style="background-image: url('assets/products/placeholder-accessories.svg')"></div>
+          <div class="card-body">
+            <h3>Accessories & Lifestyle</h3>
+            <p>Handbags, jewelry and couture lifestyle pieces.</p>
+          </div>
+        </a>
+        <a class="card" href="digital.html">
+          <div class="card-media" style="background-image: url('assets/products/placeholder-digital.svg')"></div>
+          <div class="card-body">
+            <h3>Digital & E-Products</h3>
+            <p>E-books, templates and tools for creators.</p>
+          </div>
+        </a>
+      </div>
+    </section>
 
+    <section id="latest" class="container">
+      <h2>Latest Arrivals</h2>
+      <div id="latest-products" class="products-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-left">
+        <img src="assets/logo.svg" alt="House of Marwa logo" class="logo small">
+        <p>© House of Marwa — All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <nav>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Cart</a>
+          <a href="admin-login.html">Admin</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="script.js?v=2.0"></script>
 </body>
 </html>
