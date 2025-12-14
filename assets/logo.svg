@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="420" height="80" viewBox="0 0 420 80" xmlns="http://www.w3.org/2000/svg">
+  <rect rx="8" width="420" height="80" fill="#2A0835"/>
+  <text x="28" y="50" font-family="Georgia, serif" font-size="28" fill="#E7CBA9">HOUSE OF MARWA</text>
+  <circle cx="380" cy="40" r="18" fill="#A832FF" opacity="0.9"/>
+</svg>
