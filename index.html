@@ -1,27 +1,43 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HOUSE OF MARWA — Home</title>
   <meta name="description" content="House of Marwa — Luxury couture, beauty, accessories & digital products." />
-  <link rel="stylesheet" href="style.css?v=2.0">
+  <link rel="stylesheet" href="style.css?v=3.0">
 </head>
+
 <body class="page-home">
-  <header class="site-header">
+
+  <!-- ============================= -->
+  <!-- HEADER / NAVIGATION BAR       -->
+  <!-- ============================= -->
+  <header class="site-header" id="topHeader">
+
     <div class="topbar">
       <div class="brand">
         <a href="index.html" class="brand-link" aria-label="House of Marwa Home">
           <img src="assets/logo.svg" alt="House of Marwa logo" class="logo">
         </a>
       </div>
-      <nav class="main-nav" aria-label="Primary">
+
+      <!-- HAMBURGER FOR MOBILE -->
+      <button id="hamburgerBtn" class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav desktop-only" aria-label="Primary">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
+
           <li class="nav-mega-parent">
             <button class="mega-toggle" aria-expanded="false">Divisions ▾</button>
+
             <div class="mega-menu" aria-hidden="true">
               <div class="mega-grid">
+
                 <div class="mega-col">
                   <h4>Couture</h4>
                   <ul>
@@ -31,6 +47,7 @@
                     <li><a href="couture.html#made-to-measure">Made-to-measure</a></li>
                   </ul>
                 </div>
+
                 <div class="mega-col">
                   <h4>Beauty</h4>
                   <ul>
@@ -40,6 +57,7 @@
                     <li><a href="beauty.html#fragrance">Fragrance</a></li>
                   </ul>
                 </div>
+
                 <div class="mega-col">
                   <h4>Accessories</h4>
                   <ul>
@@ -49,6 +67,7 @@
                     <li><a href="accessories.html#sunglasses">Sunglasses</a></li>
                   </ul>
                 </div>
+
                 <div class="mega-col">
                   <h4>Digital</h4>
                   <ul>
@@ -58,9 +77,12 @@
                     <li><a href="digital.html#templates">Templates</a></li>
                   </ul>
                 </div>
+
               </div>
             </div>
+
           </li>
+
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="cart.html">Cart</a></li>
@@ -68,24 +90,101 @@
         </ul>
       </nav>
     </div>
-
-    <div class="hero">
-      <div class="hero-inner">
-        <div class="hero-copy">
-          <h1>HOUSE OF MARWA</h1>
-          <p class="lead">Ultra-luxury couture, beauty & lifestyle — crafted with precision, designed for elegance.</p>
-          <div class="hero-ctas">
-            <a class="btn btn-primary" href="couture.html">Explore Couture</a>
-            <a class="btn btn-outline" href="digital.html">Discover Digital</a>
-          </div>
-        </div>
-        <div class="hero-media">
-          <img src="assets/banner.svg" alt="House of Marwa banner" class="hero-banner">
-        </div>
-      </div>
-    </div>
   </header>
 
+  <!-- ============================= -->
+  <!-- MOBILE SLIDE-OUT DRAWER       -->
+  <!-- ============================= -->
+  <aside id="mobileDrawer" class="mobile-drawer">
+    <div class="drawer-header">
+      <img src="assets/logo.svg" class="drawer-logo" alt="House of Marwa">
+      <button id="drawerClose" class="drawer-close">×</button>
+    </div>
+
+    <nav class="drawer-nav">
+
+      <a href="index.html">🏠 Home</a>
+
+      <div class="drawer-accordion">
+        <button class="accordion-btn">Divisions ▾</button>
+        <div class="accordion-panel">
+
+          <h4>Couture</h4>
+          <a href="couture.html">Couture Home</a>
+          <a href="couture.html#new-arrivals">New Arrivals</a>
+          <a href="couture.html#bridal">Bridal</a>
+          <a href="couture.html#made-to-measure">Made-to-measure</a>
+
+          <h4>Beauty</h4>
+          <a href="beauty.html">Beauty Home</a>
+          <a href="beauty.html#lipstick">Lipsticks</a>
+          <a href="beauty.html#skincare">Skincare</a>
+          <a href="beauty.html#fragrance">Fragrance</a>
+
+          <h4>Accessories</h4>
+          <a href="accessories.html">Accessories Home</a>
+          <a href="accessories.html#handbags">Handbags</a>
+          <a href="accessories.html#jewelry">Jewelry</a>
+          <a href="accessories.html#sunglasses">Sunglasses</a>
+
+          <h4>Digital</h4>
+          <a href="digital.html">Digital Home</a>
+          <a href="digital.html#ebooks">E-books</a>
+          <a href="digital.html#courses">Courses</a>
+          <a href="digital.html#templates">Templates</a>
+
+        </div>
+      </div>
+
+      <a href="about.html">📖 About</a>
+      <a href="contact.html">📩 Contact</a>
+      <a href="cart.html">🛒 Cart</a>
+      <a href="admin-login.html">🔐 Admin Login</a>
+
+    </nav>
+  </aside>
+
+  <!-- ============================= -->
+  <!-- MOBILE FLOATING BUTTONS       -->
+  <!-- ============================= -->
+  <a href="cart.html" class="floating-cart">🛒</a>
+  <a href="contact.html" class="floating-chat">💬</a>
+
+  <!-- ============================= -->
+  <!-- BOTTOM MOBILE NAV BAR         -->
+  <!-- ============================= -->
+  <nav class="bottom-nav">
+    <a href="index.html"><span>🏠</span><p>Home</p></a>
+    <a href="couture.html"><span>👗</span><p>Couture</p></a>
+    <a href="beauty.html"><span>💄</span><p>Beauty</p></a>
+    <a href="cart.html"><span>🛒</span><p>Cart</p></a>
+    <a href="about.html"><span>👤</span><p>Profile</p></a>
+  </nav>
+
+  <!-- ============================= -->
+  <!-- HERO SECTION                   -->
+  <!-- ============================= -->
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1>HOUSE OF MARWA</h1>
+        <p class="lead">Ultra-luxury couture, beauty & lifestyle — crafted with precision, designed for elegance.</p>
+
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="couture.html">Explore Couture</a>
+          <a class="btn btn-outline" href="digital.html">Discover Digital</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img src="assets/banner.svg" alt="House of Marwa banner" class="hero-banner">
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================= -->
+  <!-- MAIN CONTENT                   -->
+  <!-- ============================= -->
   <main>
     <section class="featured-section">
       <div class="container">
@@ -97,6 +196,7 @@
     <section class="divisions-overview container">
       <h2>Our Divisions</h2>
       <div class="cards-grid">
+
         <a class="card" href="couture.html">
           <div class="card-media" style="background-image: url('assets/products/placeholder-couture.svg')"></div>
           <div class="card-body">
@@ -104,6 +204,7 @@
             <p>High-end couture, impeccable tailoring, premium fabrics.</p>
           </div>
         </a>
+
         <a class="card" href="beauty.html">
           <div class="card-media" style="background-image: url('assets/products/placeholder-beauty.svg')"></div>
           <div class="card-body">
@@ -111,6 +212,7 @@
             <p>Luxury lipsticks, skincare and refined fragrances.</p>
           </div>
         </a>
+
         <a class="card" href="accessories.html">
           <div class="card-media" style="background-image: url('assets/products/placeholder-accessories.svg')"></div>
           <div class="card-body">
@@ -118,6 +220,7 @@
             <p>Handbags, jewelry and couture lifestyle pieces.</p>
           </div>
         </a>
+
         <a class="card" href="digital.html">
           <div class="card-media" style="background-image: url('assets/products/placeholder-digital.svg')"></div>
           <div class="card-body">
@@ -125,6 +228,7 @@
             <p>E-books, templates and tools for creators.</p>
           </div>
         </a>
+
       </div>
     </section>
 
@@ -134,12 +238,14 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-left">
         <img src="assets/logo.svg" alt="House of Marwa logo" class="logo small">
         <p>© House of Marwa — All rights reserved.</p>
       </div>
+
       <div class="footer-right">
         <nav>
           <a href="about.html">About</a>
@@ -151,6 +257,7 @@
     </div>
   </footer>
 
-  <script defer src="script.js?v=2.0"></script>
+  <script defer src="script.js?v=3.0"></script>
+
 </body>
 </html>
