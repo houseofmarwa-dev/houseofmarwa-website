@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>House of Marwa — Couture Division</title>
+<title>House of Marwa — Luxury Couture</title>
 <link rel="stylesheet" href="style.css">
 <script defer src="script.js"></script>
 </head>
 
 <body>
 
+<!-- ================= MEGA MENU ================= -->
 <header class="navbar">
     <div class="logo">
         <img src="assets/logo.png" class="logo-img">
@@ -17,86 +16,74 @@
     </div>
 
     <ul class="nav-links">
-        <li onclick="scrollToSection('home')">Home</li>
-        <li onclick="scrollToSection('ventures')">Ventures</li>
-        <li onclick="scrollToSection('products')">Products</li>
-        <li onclick="scrollToSection('about')">About</li>
-        <li onclick="scrollToSection('contact')">Contact</li>
+        <li><a href="index.html">Home</a></li>
+
+        <li class="menu-parent">Divisions ▾
+            <div class="mega-menu">
+
+                <div class="column">
+                    <h3>Couture</h3>
+                    <a href="couture.html">All Couture</a>
+                    <a href="couture.html#dresses">Premium Dresses</a>
+                    <a href="couture.html#abayas">Abayas</a>
+                    <a href="couture.html#festive">Festive Wear</a>
+                </div>
+
+                <div class="column">
+                    <h3>Beauty</h3>
+                    <a href="beauty.html">All Beauty Products</a>
+                    <a href="beauty.html#lipstick">Lipsticks</a>
+                    <a href="beauty.html#skin">Skincare</a>
+                    <a href="beauty.html#fragrance">Fragrances</a>
+                </div>
+
+                <div class="column">
+                    <h3>Accessories</h3>
+                    <a href="accessories.html">All Accessories</a>
+                    <a href="accessories.html#bags">Handbags</a>
+                    <a href="accessories.html#jewels">Jewelry</a>
+                    <a href="accessories.html#sun">Sunglasses</a>
+                </div>
+
+                <div class="column">
+                    <h3>Digital</h3>
+                    <a href="digital.html">Digital Store</a>
+                    <a href="digital.html#ebooks">E-Books</a>
+                    <a href="digital.html#courses">Courses</a>
+                    <a href="digital.html#designs">Design Kits</a>
+                </div>
+
+            </div>
+        </li>
+
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart 🛒</a></li>
+        <li><a href="admin-login.html">Admin</a></li>
     </ul>
 </header>
 
-<!-- HERO SECTION -->
-<section id="home" class="hero">
-    <div class="hero-overlay"></div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="overlay"></div>
     <div class="hero-content">
         <h1 class="hero-title">House of Marwa</h1>
-        <p class="hero-subtitle">Couture • Beauty • Lifestyle • Digital</p>
-        <button class="cta">Explore Collection</button>
+        <p class="hero-subtitle">Luxury • Couture • Beauty • Lifestyle</p>
     </div>
 </section>
 
-<!-- BUSINESS VENTURES -->
-<section id="ventures" class="ventures">
-    <h2 class="section-title">Our Business Divisions</h2>
+<!-- ================= FEATURED PRODUCTS ================= -->
+<section class="content-section">
+    <h2 class="section-title">Featured Luxury Pieces</h2>
+    <p class="section-text">A curated selection from our couture, beauty, and lifestyle collections.</p>
 
-    <div class="venture-grid">
-
-        <div class="venture-card">
-            <h3 class="venture-title">Couture & Garments Division</h3>
-            <p class="venture-text">
-                Premium clothing crafted with artistic precision and modern couture engineering.
-                Our fashion line represents elegance, sharp tailoring, and timeless design.
-            </p>
-        </div>
-
-        <div class="venture-card">
-            <h3 class="venture-title">Beauty & Cosmetics Division</h3>
-            <p class="venture-text">
-                A high-end beauty collection featuring premium lipsticks, skincare,
-                fragrances, and makeup essentials inspired by global trends.
-            </p>
-        </div>
-
-        <div class="venture-card">
-            <h3 class="venture-title">Accessories & Lifestyle Division</h3>
-            <p class="venture-text">
-                Luxury handbags, jewelry, sunglasses, wallets, and lifestyle goods 
-                crafted for the modern couture aesthetic.
-            </p>
-        </div>
-
-        <div class="venture-card">
-            <h3 class="venture-title">Digital & E-Products Division</h3>
-            <p class="venture-text">
-                E-books, digital courses, design packs, and modern digital goods 
-                engineered for creators of the new era.
-            </p>
-        </div>
-
-    </div>
+    <div id="featured" class="product-grid"></div>
 </section>
 
-<!-- PRODUCT SECTION -->
-<section id="products" class="products-section">
-    <h2 class="section-title">Featured Products</h2>
-    <div id="product-list" class="product-grid"></div>
-</section>
-
-<!-- ABOUT SECTION -->
-<section id="about" class="about">
-    <h2 class="section-title">About House of Marwa</h2>
-    <p class="about-text">
-        House of Marwa is a luxury-driven multi-vertical brand dedicated to elegance, 
-        innovation, and refined experiences. Our mission is to blend heritage couture 
-        with modern design to create unforgettable fashion and beauty products.
-    </p>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-    <h2 class="section-title">Get In Touch</h2>
-    <p class="contact-text">contact@houseofmarwa.com</p>
-</section>
+<script>
+loadCategory("garments", "featured");
+</script>
 
 </body>
 </html>
