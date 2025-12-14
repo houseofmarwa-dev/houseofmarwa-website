@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>House of Marwa</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo" onclick="showPage('home')">
+        <img src="assets/logo.png" class="logo-img">
+        <span>HOUSE OF MARWA</span>
+    </div>
+
+    <ul class="nav-links">
+        <li onclick="showPage('home')">Home</li>
+        <li onclick="showPage('cart')">Cart 🛒</li>
+        <li onclick="showPage('login')">Login</li>
+
+        <li class="dropdown">Categories
+            <div class="mega">
+                <div><h3>Garments</h3></div>
+                <div><h3>Cosmetics</h3></div>
+                <div><h3>Accessories</h3></div>
+                <div><h3>Digital</h3></div>
+            </div>
+        </li>
+
+        <li onclick="showPage('admin-login')">Admin</li>
+    </ul>
+</header>
+
+<!-- HOME PAGE -->
+<div id="home" class="page" style="display:block;">
+
+    <section class="hero">
+        <img src="assets/banner.jpg" class="banner">
+        <h1 class="neon-title">HOUSE OF MARWA</h1>
+        <p class="tagline">Luxury • Fashion • Beauty • Lifestyle</p>
+    </section>
+
+    <section class="filters">
+        <button onclick="filterProducts('all', this)" class="active">All</button>
+        <button onclick="filterProducts('garments', this)">Garments</button>
+        <button onclick="filterProducts('cosmetics', this)">Cosmetics</button>
+        <button onclick="filterProducts('accessories', this)">Accessories</button>
+        <button onclick="filterProducts('digital', this)">Digital</button>
+    </section>
+
+    <div id="product-list" class="products"></div>
+</div>
+
+<!-- CART PAGE -->
+<div id="cart" class="page">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <button class="primary" onclick="showPage('checkout')">Checkout</button>
+</div>
+
+<!-- CHECKOUT PAGE -->
+<div id="checkout" class="page">
+    <h2>Checkout</h2>
+    <input placeholder="Full Name">
+    <input placeholder="Address">
+    <input placeholder="Phone">
+    <button class="primary" onclick="alert('Order Placed!')">Place Order</button>
+</div>
+
+<!-- LOGIN PAGE -->
+<div id="login" class="page">
+    <h2>Login</h2>
+    <input id="login-user" placeholder="Username">
+    <input id="login-pass" type="password" placeholder="Password">
+    <button class="primary" onclick="fakeLogin()">Login</button>
+</div>
+
+<!-- ADMIN LOGIN -->
+<div id="admin-login" class="page">
+    <h2>Admin Login</h2>
+    <input id="admin-user" placeholder="Admin Username">
+    <input id="admin-pass" type="password" placeholder="Password">
+    <button class="primary" onclick="adminLogin()">Enter Admin Panel</button>
+</div>
+
+</body>
+</html>

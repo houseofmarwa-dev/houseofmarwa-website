@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marwa Admin Panel</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="admin.js"></script>
+</head>
+
+<body>
+
+<h1 class="admin-title">Marwa Admin Panel</h1>
+
+<div class="admin-menu">
+    <button onclick="adminTab('prod')">Products</button>
+    <button onclick="adminTab('add')">Add Product</button>
+    <button onclick="adminTab('orders')">Orders</button>
+</div>
+
+<div id="admin-prod">
+    <h2>Product List</h2>
+    <table id="admin-table"></table>
+</div>
+
+<div id="admin-add" style="display:none;">
+    <h2>Add Product</h2>
+    <input id="new-name" placeholder="Product Name">
+    <input id="new-price" placeholder="Price">
+    <select id="new-cat">
+        <option value="garments">Garments</option>
+        <option value="cosmetics">Cosmetics</option>
+        <option value="accessories">Accessories</option>
+        <option value="digital">Digital</option>
+    </select>
+    <button class="primary" onclick="addProduct()">Add Product</button>
+</div>
+
+<div id="admin-orders" style="display:none;">
+    <h2>Orders</h2>
+    <p>No orders yet.</p>
+</div>
+
+</body>
+</html>

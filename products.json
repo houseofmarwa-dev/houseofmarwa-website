@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Floral Dress",
+        "price": 1999,
+        "category": "garments",
+        "image": "assets/products/dress1.jpg"
+    },
+    {
+        "name": "Lipstick Set",
+        "price": 1200,
+        "category": "cosmetics",
+        "image": "assets/products/lipstick1.jpg"
+    },
+    {
+        "name": "Gold Earrings",
+        "price": 500,
+        "category": "accessories",
+        "image": "assets/products/earrings1.jpg"
+    },
+    {
+        "name": "E-Book",
+        "price": 299,
+        "category": "digital",
+        "image": "assets/products/ebook1.jpg"
+    }
+]
