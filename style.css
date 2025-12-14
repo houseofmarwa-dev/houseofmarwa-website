@@ -1,4 +1,7 @@
-/* GLOBAL COLORS */
+/* ==============================
+   HOUSE OF MARWA — LUXURY THEME
+   ============================== */
+
 :root {
     --plum: #2A0835;
     --gold: #E7CBA9;
@@ -8,35 +11,40 @@
     --black-pearl: #0C0B10;
 }
 
-* { margin:0; padding:0; box-sizing:border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--black-pearl);
     color: var(--gold);
+    padding-top: 90px;
 }
 
-/* NAVBAR */
+/* ==============================
+   NAVBAR + MEGA MENU
+   ============================== */
+
 .navbar {
     width: 100%;
-    padding: 20px 50px;
+    padding: 18px 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
-    background: rgba(10, 5, 15, 0.8);
-    backdrop-filter: blur(8px);
-    z-index: 1000;
+    background: rgba(12, 11, 16, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 999;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .logo-img {
     height: 45px;
-    margin-right: 12px;
 }
 
 .logo span {
@@ -45,37 +53,93 @@ body {
     letter-spacing: 1px;
 }
 
-/* NAV LINKS */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 32px;
-    font-size: 18px;
+    gap: 30px;
+    align-items: center;
 }
 
 .nav-links li {
     cursor: pointer;
-    transition: 0.3s;
+    position: relative;
+    font-size: 18px;
+    color: var(--gold);
 }
 
-.nav-links li:hover {
+.nav-links a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
     color: var(--rose);
 }
 
-/* HERO SECTION */
+/* ============= MEGA MENU ============= */
+
+.menu-parent:hover .mega-menu { display: flex; }
+
+.mega-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 750px;
+    background: var(--plum);
+    border: 1px solid var(--gold);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(168, 50, 255, 0.4);
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.mega-menu .column { width: 22%; }
+
+.mega-menu h3 {
+    font-size: 20px;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.mega-menu a {
+    display: block;
+    color: var(--silver);
+    margin: 6px 0;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.mega-menu a:hover {
+    color: var(--rose);
+    padding-left: 6px;
+}
+
+/* ==============================
+   HERO SECTIONS
+   ============================== */
+
 .hero {
-    height: 100vh;
+    height: 90vh;
     background: url('assets/banner.jpg') center/cover no-repeat;
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-.hero-overlay {
+.hero-small {
+    height: 55vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
     position: absolute;
     inset: 0;
-    background: rgba(10, 5, 15, 0.7);
+    background: rgba(12, 11, 16, 0.65);
 }
 
 .hero-content {
@@ -84,80 +148,47 @@ body {
 }
 
 .hero-title {
-    font-size: 68px;
+    font-size: 70px;
     font-weight: 700;
-    color: var(--gold);
     text-shadow: 0 0 25px var(--amethyst);
 }
 
 .hero-subtitle {
-    font-size: 22px;
     margin-top: 10px;
+    font-size: 22px;
 }
 
-.cta {
-    margin-top: 30px;
-    padding: 14px 32px;
-    background: var(--gold);
-    color: var(--black-pearl);
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* SECTIONS */
-.section-title {
+.page-title {
+    position: relative;
+    z-index: 10;
+    font-size: 48px;
     text-align: center;
-    font-size: 38px;
-    margin-top: 80px;
-    color: var(--gold);
+    margin-top: 150px;
 }
 
-/* VENTURES */
-.venture-grid {
+/* ==============================
+   PRODUCT GRID
+   ============================== */
+
+.product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    padding: 40px 60px;
     gap: 30px;
-    padding: 40px 60px;
-}
-
-.venture-card {
-    background: var(--plum);
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid var(--gold);
-}
-
-.venture-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.venture-text {
-    opacity: 0.9;
-}
-
-/* PRODUCTS */
-.product-grid {
-    padding: 40px 60px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 35px;
 }
 
 .product-card {
     background: var(--plum);
     padding: 18px;
+    border: 1px solid var(--gold);
     border-radius: 12px;
-    border: 1px solid var(--rose);
-    transition: 0.3s;
     text-align: center;
+    transition: 0.3s;
 }
 
 .product-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 0 18px var(--amethyst);
+    box-shadow: 0 0 20px var(--amethyst);
 }
 
 .product-card img {
@@ -165,20 +196,37 @@ body {
     border-radius: 10px;
 }
 
-.product-card h3 {
-    margin-top: 12px;
-    color: var(--gold);
-}
+/* ==============================
+   CONTENT & PAGE SECTIONS
+   ============================== */
 
-/* ABOUT */
-.about {
-    padding: 50px 90px;
-    font-size: 20px;
-    opacity: 0.9;
-}
-
-/* CONTACT */
-.contact {
+.content-section {
+    padding: 40px 60px;
     text-align: center;
-    padding: 50px 20px;
 }
+
+.section-title {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    font-size: 18px;
+    color: var(--silver);
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ABOUT & CONTACT */
+.about-page,
+.contact-page {
+    padding: 40px 60px;
+    text-align: center;
+}
+
+.about-page h1,
+.contact-page h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
