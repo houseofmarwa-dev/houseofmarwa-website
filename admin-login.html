@@ -1,1 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HOUSE OF MARWA — Admin Login</title>
+  <meta name="description" content="Admin Login" />
+  <link rel="stylesheet" href="style.css?v=2.0">
+</head>
+<body class="page-admin-login">
+  <header class="site-header">
+    <div class="topbar">
+      <div class="brand">
+        <a href="index.html" class="brand-link">
+          <img src="assets/logo.svg" alt="House of Marwa logo" class="logo">
+        </a>
+      </div>
+    </div>
+  </header>
 
+  <main class="container">
+    <h1>Admin Login</h1>
+    <form id="adminLoginForm">
+      <label>
+        Username
+        <input type="text" name="username" required>
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" required>
+      </label>
+      <button class="btn btn-primary" type="submit">Login</button>
+    </form>
+    <p id="adminMsg" class="muted"></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-left">
+        <img src="assets/logo.svg" alt="House of Marwa logo" class="logo small">
+        <p>© House of Marwa — All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="script.js?v=2.0"></script>
+</body>
+</html>
