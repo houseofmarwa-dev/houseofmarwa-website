@@ -57,29 +57,46 @@ The admin dashboard includes:
 - Ready for Firebase/Node backend upgrade  
 
 ---
-
-## 📂 Project Structure
-
-📁 houseofmarwa-website/
+houseofmarwa-website/
 │
-├── index.html # Home page (with drawer, floating buttons, bottom nav)
-├── couture.html # Couture products
-├── beauty.html # Beauty products
-├── accessories.html # Lifestyle & accessories
-├── digital.html # Digital products
+├── index.html                  # Main homepage. Includes:
+│                               # - Slide-out mobile drawer
+│                               # - Desktop mega menu
+│                               # - Floating cart/chat buttons
+│                               # - Bottom mobile nav bar
+│                               # - Featured & latest products
 │
-├── cart.html # Cart page
-├── checkout.html # Checkout (UI demo)
-├── product.html # Product detail page (optional)
+├── couture.html                # Couture division landing page
+├── beauty.html                 # Beauty division landing page
+├── accessories.html            # Accessories & lifestyle landing
+├── digital.html                # Digital products landing page
 │
-├── admin-login.html # Admin Login (demo)
-├── admin-dashboard.html # Product dashboard (demo)
+├── cart.html                   # Interactive cart with localStorage
+├── checkout.html               # Checkout flow (UI only / demo)
+├── product.html                # Individual product view (optional)
 │
-├── style.css # Global styles + luxury UI + responsiveness
-├── script.js # Drawer, accordion, cart, rendering, scroll shadow
-├── products.json # Product database
+├── admin-login.html            # Demo login for admin area
+├── admin-dashboard.html        # Displays product list, preview cards
 │
-└── assets/ # Logos, banners, product images
+├── style.css                   # Global styles + glassmorphism +
+│                               # responsive layouts + animations
+│
+├── script.js                   # Main logic:
+│                               # - Drawer open/close
+│                               # - Accordion menu
+│                               # - Product rendering
+│                               # - Add to cart
+│                               # - Cart toast animations
+│                               # - Scroll shadow header
+│
+├── products.json               # JSON database of all products
+│
+└── assets/                     # Contains:
+                                # - Logos
+                                # - Banners
+                                # - Placeholder images
+                                # - Product images
+                                # - Icons
 
 ---
 
