@@ -1,26 +1,74 @@
 [
-    {
-        "name": "Floral Dress",
-        "price": 1999,
-        "category": "garments",
-        "image": "assets/products/dress1.jpg"
-    },
-    {
-        "name": "Lipstick Set",
-        "price": 1200,
-        "category": "cosmetics",
-        "image": "assets/products/lipstick1.jpg"
-    },
-    {
-        "name": "Gold Earrings",
-        "price": 500,
-        "category": "accessories",
-        "image": "assets/products/earrings1.jpg"
-    },
-    {
-        "name": "E-Book",
-        "price": 299,
-        "category": "digital",
-        "image": "assets/products/ebook1.jpg"
-    }
+  {
+    "id": "couture-001",
+    "title": "Midnight Plum Gown",
+    "description": "Hand-tailored couture evening gown in plum silk with hand-embellished detailing.",
+    "price": "£3,200",
+    "category": "couture",
+    "image": "assets/products/couture-001.svg",
+    "featured": true
+  },
+  {
+    "id": "couture-002",
+    "title": "Marwa Signature Abaya",
+    "description": "Minimalist luxurious abaya in black pearl finish with couture lining.",
+    "price": "£1,450",
+    "category": "couture",
+    "image": "assets/products/couture-002.svg",
+    "featured": false
+  },
+  {
+    "id": "beauty-001",
+    "title": "Luxe Matte Lipstick — Rose",
+    "description": "Long-wear couture matte lipstick in Rose — richly pigmented and hydrating.",
+    "price": "£42",
+    "category": "beauty",
+    "image": "assets/products/beauty-001.svg",
+    "featured": true
+  },
+  {
+    "id": "beauty-002",
+    "title": "Radiance Serum",
+    "description": "Signature radiance serum with natural botanicals for luminous skin.",
+    "price": "£110",
+    "category": "beauty",
+    "image": "assets/products/beauty-002.svg",
+    "featured": false
+  },
+  {
+    "id": "accessories-001",
+    "title": "Marwa Signature Clutch",
+    "description": "Hand-finished clutch with gold plating and couture lining.",
+    "price": "£680",
+    "category": "accessories",
+    "image": "assets/products/accessories-001.svg",
+    "featured": true
+  },
+  {
+    "id": "accessories-002",
+    "title": "Aurum Necklace",
+    "description": "Limited edition necklace with hand-set crystals.",
+    "price": "£1,200",
+    "category": "accessories",
+    "image": "assets/products/accessories-002.svg",
+    "featured": false
+  },
+  {
+    "id": "digital-001",
+    "title": "Branding Masterclass",
+    "description": "Comprehensive course on luxury branding and visual identity.",
+    "price": "£199",
+    "category": "digital",
+    "image": "assets/products/digital-001.svg",
+    "featured": false
+  },
+  {
+    "id": "digital-002",
+    "title": "Couture Photoshop Kit",
+    "description": "Design kit and templates for high-end fashion creatives.",
+    "price": "£49",
+    "category": "digital",
+    "image": "assets/products/digital-002.svg",
+    "featured": false
+  }
 ]
