@@ -1,32 +1,120 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>Accessories — House of Marwa</title>
-<link rel="stylesheet" href="style.css">
-<script defer src="script.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HOUSE OF MARWA — Accessories</title>
+  <meta name="description" content="Accessories & Lifestyle by House of Marwa" />
+  <link rel="stylesheet" href="style.css?v=2.0">
 </head>
+<body class="page-accessories">
+  <header class="site-header">
+    <div class="topbar">
+      <div class="brand">
+        <a href="index.html" class="brand-link">
+          <img src="assets/logo.svg" alt="House of Marwa logo" class="logo">
+        </a>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li class="nav-mega-parent">
+            <button class="mega-toggle" aria-expanded="false">Divisions ▾</button>
+            <div class="mega-menu" aria-hidden="true">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4>Couture</h4>
+                  <ul>
+                    <li><a href="couture.html">Couture Home</a></li>
+                    <li><a href="couture.html#new-arrivals">New Arrivals</a></li>
+                    <li><a href="couture.html#bridal">Bridal</a></li>
+                    <li><a href="couture.html#made-to-measure">Made-to-measure</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <h4>Beauty</h4>
+                  <ul>
+                    <li><a href="beauty.html">Beauty Home</a></li>
+                    <li><a href="beauty.html#lipstick">Lipsticks</a></li>
+                    <li><a href="beauty.html#skincare">Skincare</a></li>
+                    <li><a href="beauty.html#fragrance">Fragrance</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <h4>Accessories</h4>
+                  <ul>
+                    <li><a href="accessories.html">Accessories Home</a></li>
+                    <li><a href="accessories.html#handbags">Handbags</a></li>
+                    <li><a href="accessories.html#jewelry">Jewelry</a></li>
+                    <li><a href="accessories.html#sunglasses">Sunglasses</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <h4>Digital</h4>
+                  <ul>
+                    <li><a href="digital.html">Digital Home</a></li>
+                    <li><a href="digital.html#ebooks">E-books</a></li>
+                    <li><a href="digital.html#courses">Courses</a></li>
+                    <li><a href="digital.html#templates">Templates</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="admin-login.html">Admin Login</a></li>
+        </ul>
+      </nav>
+    </div>
 
-<body>
+    <div class="hero small-hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>Accessories & Lifestyle</h1>
+          <p class="lead">Handcrafted handbags, jewelry and curated lifestyle pieces.</p>
+        </div>
+        <div class="hero-media">
+          <img src="assets/products/placeholder-accessories.svg" alt="Accessories hero" class="hero-banner">
+        </div>
+      </div>
+    </div>
+  </header>
 
-<header class="navbar"> ... </header>
+  <main class="container">
+    <section id="handbags">
+      <h2>Featured Accessories</h2>
+      <div id="accessories-products" class="products-grid"></div>
+    </section>
 
-<section class="hero-small" style="background-image:url('assets/banner.jpg')">
-    <div class="overlay"></div>
-    <h1 class="page-title">Accessories & Lifestyle</h1>
-</section>
+    <section id="jewelry">
+      <h2>Jewelry</h2>
+      <p>Statement pieces crafted with care and precious metals.</p>
+    </section>
 
-<section class="content-section">
-    <h2 class="section-title">Signature Accessories</h2>
-    <p class="section-text">
-        Discover handbags, jewelry, sunglasses, and essentials curated for the couture lifestyle.
-    </p>
+    <section id="sunglasses">
+      <h2>Sunglasses</h2>
+      <p>Signature silhouettes and couture detailing.</p>
+    </section>
+  </main>
 
-    <div class="product-grid" id="acc-products"></div>
-</section>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-left">
+        <img src="assets/logo.svg" alt="House of Marwa logo" class="logo small">
+        <p>© House of Marwa — All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <nav>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Cart</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
 
-<script>
-loadCategory("accessories", "acc-products");
-</script>
-
+  <script defer src="script.js?v=2.0"></script>
 </body>
 </html>
